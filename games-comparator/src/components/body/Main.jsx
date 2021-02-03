@@ -5,9 +5,16 @@ import {
   FlexFamousGames,
   FlexFamousContent,
   FlexBestGames,
-  FlexSoonGames
+  FlexSoonGames,
+  Between,
+  Img,
+  Cards,
+  CardsContainer,
+  
 } from "../../styled-components/MainStyle";
 import axios from 'axios';
+import logo from '../assets/images/logo.jpg';
+import CardItems from './CardItems'
 
 export default function Main() {
     const [games, setGames] = useState([]);
@@ -56,6 +63,21 @@ export default function Main() {
         </FlexSoonGames>
 
       </FlexGames>
+        <Between>
+          <Img src={logo}/>
+          <p>Notre site internet vous permet de comparer les prix des jeux vidéo disponibles dans les boutiques de nos partenaires. En utilisant notre comparateur de prix pour jeux vidéo, DLC et cartes prépayées, vous économisez du temps, et de l'argent! Nous vous aidons à trouver les prix les plus bas pour vos jeux préférés et, à votre demande, nous pouvons aussi vous informer lorsque leurs prix changent! Nous proposons ce service pour les jeux PC (Steam, Epic Games ...) et consoles (PS5, Xbox Series X / S, Switch, etc.) afin de vous permettre d'économiser de l'argent quelle que soit votre plateforme. Enfin, vous pouvez consulter notre blog pour vous tenir au courant des dernières actus sur les jeux!</p>
+        </Between>
+        { <Cards>
+          <CardsContainer>
+            <ul>
+              <CardItems
+               src="https://solvers.fr/wp-content/uploads/2019/06/8-astuces-pour-ame%CC%81liorer-les-performances-des-applications-React.png"
+               text="React js : Ce que vous avez besoin de savoir avant d'entrer en entreprise "
+               path="/"
+               label="Développeur Front" />
+            </ul>
+          </CardsContainer>
+        </Cards> }
     </Background>
   );
 }
