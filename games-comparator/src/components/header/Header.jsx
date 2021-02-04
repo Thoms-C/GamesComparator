@@ -13,13 +13,14 @@ import {
   PlatformUl,
   PlatformLi,
 } from "../../styled-components/HeaderStyle";
+import logo from '../assets/images/logo.jpg'
 
 export default function Header() {
   return (
     <Background>
       <Nav>
         <FlexNav>
-          <Logo>LOGO</Logo>
+          <Logo><img src={logo}/></Logo>
           <div>
             <FlexNaviUL>
               <li>Games</li>

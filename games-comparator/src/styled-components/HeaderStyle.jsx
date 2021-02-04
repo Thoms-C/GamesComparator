@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const FlexNav = styled.div`
   display: flex;
   flex-direction: row;
-  background-color: #2c2c2c;
+  background-color: #000814;
   height: 85px;
   width: 1240px;
   align-items: center;
@@ -23,10 +23,9 @@ export const FlexNaviUL = styled.ul`
   flex-direction: row;
   justify-content: space-between;
   width: 25vw;
-  margin-left: 10vw;
+  margin-left: 2vw;
   color: white;
   font-size: 1.3rem;
-  gap: 2vw;
 `;
 
 export const Background = styled.div`
@@ -54,6 +53,11 @@ export const Logo = styled.div`
   justify-content: center;
   align-items: center;
   color: white;
+
+  img {
+    height:15vh;
+    width:10vw
+  }
 `;
 
 export const SubNavBar = styled.div`
@@ -80,7 +84,7 @@ export const SearchBar = styled.div`
   height: 30px;
   background-color: white;
   border-radius: 15px;
-  margin-top: 30vh;
+  margin-top: 5vh;
 
   p {
     margin-left: 1vw;
@@ -96,19 +100,19 @@ export const Platform = styled.div`
   justify-content: center;
   align-items: end;
   color: green;
+  margin-top: 54.3vh;
 `;
 
 export const PlatformUl = styled.ul`
   list-style-type: none;
   display: flex;
   flex-direction: row;
-  margin-top: 28vh;
 `;
 
 export const PlatformLi = styled.li`
   border: 1px solid black;
   background-color: white;
-  width: 10vw;
+  width: 7vw;
   height: 5vh;
   display: flex;
   justify-content: center;
