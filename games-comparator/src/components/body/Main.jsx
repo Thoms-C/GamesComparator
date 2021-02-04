@@ -13,12 +13,17 @@ export default function Main() {
     const [games, setGames] = useState([]);
 
     useEffect(()=>{
-        axios.get("https://rawg-video-games-database.p.rapidapi.com/games")
-        .then(function (response){
-           console.log(setGames(response.data))
-        })
-        .catch(function (error) {})
-    }, [])
+      axios
+      .get("https://api.rawg.io/api/platforms?key=b1db5b30688c44179077bd2c87f8c0e8")
+      .then(({data})=>{
+        setGames(data.results)
+        console.log(data.results)
+      })
+      .catch(err=>{
+        console.warn("Error")
+        console.log(err)
+      });
+    });
 
   return (
     <Background>
