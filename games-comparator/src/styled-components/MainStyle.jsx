@@ -8,43 +8,91 @@ export const FlexGames = styled.div`
   display: flex;
   flex-direction: row;
   justify-content:center;
-  height: 42vh;
+  height: 49vh;
   background-color: #fff;
-  margin: 0 16vw;
+  margin: 0 7vw;
 `;
 
 export const FlexFamousGames = styled.div`
   display: flex;
   flex-direction: column;
-  height: 38vh;
-  width: 20vw;
-  background-color: brown;
+  height: 45vh;
+  width: 30vw;
+  background-color: white;
   margin: 2vh 1vw;
+  box-shadow: 0px 0px 6px gray;
+  border-radius:5px;
+  padding-bottom:1vh;
+
+  h2{
+    font-size:23px;
+    font-weight:bold;
+    margin: 1vh 0.5vw;
+  }
 `;
 
 export const FlexFamousContent = styled.div`
     display:flex;
     flex-direction:row;
     align-items:center;
-    height:40px;
+    height:auto;
+    border-bottom:1px solid lightgray;
+    margin:0 1vw;
+
 `
 
 export const FlexBestGames = styled.div`
 display: flex;
 flex-direction: column;
-height: 38vh;
-width: 20vw;
-background-color: brown;
+height: 45vh;
+width: 30vw;
+background-color: white;
 margin: 2vh 0vw;
+box-shadow: 0px 0px 6px gray;
+border-radius:5px;
+padding-bottom:1vh;
+
+h2{
+  font-size:23px;
+  font-weight:bold;
+  margin: 1vh 0.5vw;
+}
+`
+
+export const FlexBestContent = styled.div`
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  height:auto;
+  border-bottom:1px solid lightgray;
+  margin:0 1vw;
 `
 
 export const FlexSoonGames = styled.div`
 display: flex;
 flex-direction: column;
-height: 38vh;
-width: 20vw;
-background-color: brown;
+height: 45vh;
+width: 30vw;
+background-color: white;
 margin: 2vh 1vw;
+box-shadow: 0px 0px 6px gray;
+border-radius:5px;
+padding-bottom:1vh;
+
+h2{
+  font-size:23px;
+  font-weight:bold;
+  margin: 1vh 0.5vw;
+}
+`
+
+export const FlexSoonContent = styled.div`
+display:flex;
+flex-direction:row;
+align-items:center;
+height:auto;
+border-bottom:1px solid lightgray;
+margin:0 1vw;
 `
 
 export const Between = styled.div`
@@ -52,7 +100,7 @@ export const Between = styled.div`
   flex-direction:row;
   height:18vh;
   background-color: #000814;
-  margin: 0 16vw;
+  margin: 0 7vw;
   color:#fff;
   align-items:center;
   justify-content:center;
@@ -65,10 +113,6 @@ export const Between = styled.div`
 export const Img = styled.img`
   height:18vh;
   width:45vw;
-`
-
-export const Grid =styled.div`
-  display:grid;
 `
 
 export const Cards = styled.div`
@@ -86,5 +130,9 @@ export const CardsContainer = styled.div`
 
 export const Cardsitems = styled.li`
     margin-bottom: 24px;
-    
+`
+
+export const GamesImg = styled.img`
+  height:51.5px;
+  width:8vw;
 `

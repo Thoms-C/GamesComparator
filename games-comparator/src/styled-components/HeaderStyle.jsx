@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {Link} from 'react-router-dom'
 
 export const FlexNav = styled.div`
   display: flex;
@@ -26,6 +27,7 @@ export const FlexNaviUL = styled.ul`
   margin-left: 2vw;
   color: white;
   font-size: 1.3rem;
+  text-decoration:none;
 `;
 
 export const Background = styled.div`
@@ -74,6 +76,7 @@ export const SubContain = styled.div`
   width: 100%;
   height: 35px;
   margin: 0 2vw 0 2vw;
+  color:orange;
 `;
 
 export const SearchBar = styled.div`
@@ -100,7 +103,7 @@ export const Platform = styled.div`
   justify-content: center;
   align-items: end;
   color: green;
-  margin-top: 54.3vh;
+  margin-top: 52.9vh;
 `;
 
 export const PlatformUl = styled.ul`
@@ -112,9 +115,24 @@ export const PlatformUl = styled.ul`
 export const PlatformLi = styled.li`
   border: 1px solid black;
   background-color: white;
-  width: 7vw;
+  width: 8vw;
   height: 5vh;
   display: flex;
   justify-content: center;
   align-items: center;
 `;
+
+export const Links = styled(Link)`
+  text-decoration:none;
+  color:#fff;
+
+  &:hover {
+    color:orange;
+    transition:0.5s;
+  }
+`
+
+export const LinkHome = styled(Link)`
+  text-decoration:none;
+  color:orange;
+`

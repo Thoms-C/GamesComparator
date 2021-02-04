@@ -1,48 +1,19 @@
 import React from "react";
 import {
   Background,
-  FlexNaviUL,
-  FlexNav,
-  Nav,
-  Connection,
-  Logo,
-  SubNavBar,
-  SubContain,
-  SearchBar,
   Platform,
   PlatformUl,
   PlatformLi,
 } from "../../styled-components/HeaderStyle";
-import logo from '../assets/images/logo.jpg'
+import Navs from './Nav'
+import Main from '../body/Main'
+
 
 export default function Header() {
   return (
+    <>
     <Background>
-      <Nav>
-        <FlexNav>
-          <Logo><img src={logo}/></Logo>
-          <div>
-            <FlexNaviUL>
-              <li>Games</li>
-              <li>Pre-paid cards</li>
-              <li>Softwares</li>
-            </FlexNaviUL>
-          </div>
-          <Connection>
-            <p>Sign up / Sign in</p>
-          </Connection>
-        </FlexNav>
-        <SubNavBar>
-          <SubContain>
-            <p>Accueil</p>
-            <p>DarkMod</p>
-          </SubContain>
-        </SubNavBar>
-        <SearchBar>
-          <p>Search for your games.........</p>
-          <i class="fas fa-search"></i>
-        </SearchBar>
-      </Nav>
+      <Navs/>
       <Platform>
         <PlatformUl>
           <PlatformLi>PC</PlatformLi>
@@ -54,5 +25,7 @@ export default function Header() {
         </PlatformUl>
       </Platform>
     </Background>
+    <Main/>
+    </>
   );
 }

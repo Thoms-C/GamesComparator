@@ -1,5 +1,5 @@
 import React from 'react';
-import {FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink,FooterBottom,Img} from './FooterElements'
+import {FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink,FooterBottom,Img} from '../../styled-components/FooterElements'
 import logo from '../assets/images/logo.jpg';
 
 export default function Footer() {

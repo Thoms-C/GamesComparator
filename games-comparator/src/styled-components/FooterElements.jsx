@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 
 export const FooterContainer = styled.footer`
     background-color: #000814;
-    margin-top:2vh;
+    padding-top:2vh;
     display:flex;
     flex-direction:row;
     max-height:30vh;
